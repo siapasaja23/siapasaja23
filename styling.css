@@ -1,0 +1,70 @@
+:root {
+    box-sizing: border-box;
+  }
+  html
+  * {
+    margin: 10;
+    padding: 10;
+  }
+  body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size:800% 800%;
+    animation: gradient 10s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+  #app {
+    height: 100vh;
+  }
+  
+  .summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 3px solid rgb(234, 133, 9);
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+  font-size: 1.5rem;
+  color: rgb(135, 35, 35);
+  }
+  
+  .option {
+    width: 30%;
+    margin: 5px 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 40px;
+    
+  }
+  .results {
+    margin-top: 2rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  
+  
+  
